@@ -28,7 +28,7 @@ jobs:
         uses: betrybe/jest-evaluator-action@v6
         with:
           repository-test-name: 'betrybe/sd-0x-project-blogs-api-tests'
-          repository-test-branch: 'master'
+          repository-test-branch: 'teste1'
           npm-start: false
         env:
           MYSQL_USER: 'root'
