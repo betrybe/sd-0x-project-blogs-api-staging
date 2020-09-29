@@ -27,7 +27,7 @@ app.use(middlewares.promiseErrors);
 
 app.all('*', middlewares.endpointNotFound);
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}!`));
 // não remova esse endpoint, e para o avaliador funcionar
