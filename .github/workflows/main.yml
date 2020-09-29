@@ -29,7 +29,7 @@ jobs:
         with:
           repository-test-name: 'betrybe/sd-0x-project-blogs-api-tests'
           repository-test-branch: 'master'
-          npm-start: true
+          npm-start: false
         env:
           MYSQL_USER: 'root'
           MYSQL_PASSWORD: 'password'
