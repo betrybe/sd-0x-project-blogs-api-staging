@@ -3,7 +3,7 @@ const rescue = require('express-rescue');
 const { User } = require('../models');
 require('dotenv').config();
 
-const jwtSecret  = 'trybe2020';
+const jwtSecret = 'trybe2020';
 
 const validateJWT = rescue(async (req, _res, next) => {
   const token = req.headers.authorization;
