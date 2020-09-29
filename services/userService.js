@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { User } = require('../models');
 
-const { jwtSecret } = 'trybe2020';
+const jwtSecret = '45425445454';
 
 const jwtConfig = {
   expiresIn: '300m',
