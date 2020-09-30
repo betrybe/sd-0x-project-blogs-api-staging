@@ -11,6 +11,8 @@
   "parserOptions": { "ecmaVersion": 11 },
   "rules": {
     "no-console": "off",
+    "global-require": "warn",
+    "import/no-dynamic-require": "warn",
     "no-alert": "off",
     "arrow-parens": [2, "always"],
     "jsx-a11y/label-has-associated-control": 0,
