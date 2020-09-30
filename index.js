@@ -23,10 +23,6 @@ app.get('/post/search', middlewares.validateJWT, controllers.getPostByQuery);
 app.get('/post/:id', middlewares.validateJWT, controllers.getPostById);
 app.delete('/post/:id', middlewares.validateJWT, controllers.deletePostById);
 
-app.use(middlewares.promiseErrors);
-
-app.all('*', middlewares.endpointNotFound);
-
 const PORT = 3000;
 
 app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}!`));
@@ -34,3 +30,7 @@ app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}!`));
 app.get('/', (request, response) => {
   response.send();
 });
+
+app.use(middlewares.promiseErrors);
+
+app.all('*', middlewares.endpointNotFound);
